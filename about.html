@@ -1,0 +1,130 @@
+<!doctype html>
+<html>
+	<head>
+		<title></title>
+		<meta charset="utf-8" />
+		<!--<link rel="stylesheet" href="css/reset.css" />-->
+		<link rel="stylesheet" href="css/style.css" />
+		
+		<script type="text/javascript" src="Jquery.js"></script>
+		<script type="text/javascript">
+		
+		
+			window.onload = function () { 
+				var d = new Date();
+				document.querySelector(".date p span").innerHTML = d.toDateString();
+	
+			}
+
+			
+			
+			
+			/////////////////////////////
+			
+			////////////* Slider *///////
+			$(document).ready(function(){
+				
+				$("#right").click(function(){
+					$("#slider .imageCaption:nth-of-type(1)").hide("Slow");
+					$("#slider .imageCaption:nth-of-type(3)").show("Slow");
+					$("#slider .caption").slideUp("Slow",function(){
+						$("#slider .caption").slideDown("Slow");
+					});
+					
+				})
+				$("#left").click(function(){
+					$("#slider .imageCaption:nth-of-type(3)").hide("Slow");
+					$("#slider .imageCaption:nth-of-type(1)").show("Slow");
+					$("#slider .caption").slideUp("Slow",function(){
+						$("#slider .caption").slideDown("Slow");
+					});
+				})
+			})
+			
+		</script>
+	</head>
+	
+	<body>
+	
+		<a href="loginFolder/index.php"><div id="login">
+			<p>Log In</p>
+		</div></a>
+	
+		
+			
+		<header>
+			<div class="topHeader">
+				<h1>Karachi Club</h1>
+				<div class="ceoMesg">
+						<p><span>CEO <br /> Mr.Daniyal Nawaz</span><br />
+						We welcome the opportunity to connect and share with you our unique approach to innovative management that delivers extraordinary results.
+						</p>
+						<img src="images/ceo1.jpg" alt="CEO" />
+				</div>
+				<div class="date">
+					<p>Today: <span></span></p>
+				</div>	
+			</div>
+			<nav>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="facilities.html">facilities</a></li>
+						<li><a href="packages.html">Membership</a></li>
+						<li><a href="photo.html">Photos</a></li>
+						<li><a  class="selected"  href="about.html">About Us</a></li>
+					</ul>
+			</nav>
+		</header>
+		
+		<div id="container">
+			<section id="facilites">
+				<div class="swiming">
+					<h2>Karchi Club</h2>
+					<p>
+						
+ 
+
+
+Karachi Gymkhana was founded in 1886 exclusively for its members. It offers the variety of facilities and services to its members daily from 6.A.M to midnight. It never closes even on festivals/ Gazetted holidays rather colorful programs are arranged on such occasions. The club enrolled over 9000 members along-with their families, the member ship in effect comes to around 45,000 plus.
+
+ Karachi Gymkhana specifically rated as one of the largest club in Asia in view of its membership and sports facilities. The multiple facilities like Tennis, Badminton, Squash, Cricket and other sports, Swimming pool, Sauna bath, T.V Room, Jogging Track, Car Parking, Catering, Library, 
+ 
+
+ 
+ 
+ 
+ 
+
+Entertainments, Gymnasium, Physical Fitness are available for members and their families. 
+
+ Karachi Gymkhana has its own by-laws, and rules, which are applicable to all members. The body of Managing Committee is elected for one year by the vote of permanent members to look after the affairs of the club. Dedication, Discipline, Loyalty and team spirit have been the principle which have motivated, the members of the Karachi Gymkhana through this glorious period of over a hundred years and God willing, will continue to guide them in the service of their beloved club in the years to come. 
+ 
+
+					</p>
+					<img src="images/karachiclub.jpg" />
+					
+				</div>
+				
+			</section>
+			
+			
+			
+			
+			
+			<footer>
+				<nav>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="facilites.html">facilities</a></li>
+						<li><a href="packages.html">Membership</a></li>
+						<li><a href="photo.html">Photos</a></li>
+						<li><a  class="selected" href="#">About Us</a></li>
+					</ul>
+				</nav>
+				
+				<address>Copyright  &copy; 2017 - 2019 Karachi Club. All Rights Reserved</address>
+				
+			</footer>
+		</div>
+	</body>
+</html>

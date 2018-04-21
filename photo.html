@@ -1,0 +1,141 @@
+<!doctype html>
+<html>
+	<head>
+		<title></title>
+		<meta charset="utf-8" />
+		<!--<link rel="stylesheet" href="css/reset.css" />-->
+		<link rel="stylesheet" href="css/style.css" />
+		
+		<script type="text/javascript" src="Jquery.js"></script>
+		<script type="text/javascript">
+		
+		
+			window.onload = function () { 
+				var d = new Date();
+				document.querySelector(".date p span").innerHTML = d.toDateString();
+	
+			}
+
+			
+			
+			
+			
+			
+			$(document).ready( function(){
+				
+				
+				
+				
+				$("#black").hide();
+				
+				
+				$("#images img").click(function(){
+					$("#black").show("fast");
+					$(this).css('position', 'absolute');
+					$(this).css('z-index',3);
+					$(this).show().animate({left: '30%'});
+					$(this).show().animate({top: '80px'});
+					$(this).show().animate({width: '500px'});
+					$(this).show().animate({height: '350px'});
+					$(".close").css('z-index',3);
+					$(".close").show().animate({top: '70px'});
+					$(".close").show().animate({left: '65.1%'});
+					$(this).css('position', 'fixed');
+					$(".close").css('position', 'fixed');
+				})
+				
+				
+				
+			})
+		</script>
+		
+		<style>
+		
+			#images img{
+				width:200px;
+				height:150px;
+				background:#a4a4a4;
+				margin:15px;
+				border:2px ridge #a4a4a4;
+				cursor:pointer;
+			}
+			
+		</style>
+	</head>
+	
+	<body>
+		<a href="./photo.html"><div class="close"></div></a>
+		<a href="loginFolder/index.php"><div id="login">
+			<p>Log In</p>
+		</div></a>
+		<div id="black" >
+		
+		</div>
+		
+			
+		<header>
+			<div class="topHeader">
+				<h1>Karachi Club</h1>
+				<div class="ceoMesg">
+						<p><span>CEO <br /> Mr.Daniyal Nawaz</span><br />
+						We welcome the opportunity to connect and share with you our unique approach to innovative management that delivers extraordinary results.
+						</p>
+						<img src="images/ceo1.jpg" alt="CEO" />
+				</div>
+				<div class="date">
+					<p>Today: <span></span></p>
+				</div>	
+			</div>
+			<nav>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="facilities.html">facilities</a></li>
+						<li><a href="packages.html">Membership</a></li>
+						<li><a class="selected" href="photo.html">Photos</a></li>
+						<li><a href="about.html">About Us</a></li>
+					</ul>
+			</nav>
+		</header>
+		
+		<div id="container">
+			<div id="images">
+				<img src="images/photo1.jpg" />
+				<img src="images/photo2.jpg" />
+				<img src="images/photo3.jpg" />
+				<img src="images/photo4.jpg" />
+				<img src="images/photo5.jpg" />
+				<img src="images/photo1.jpg" />
+				<img src="images/photo2.jpg" />
+				<img src="images/photo3.jpg" />
+				<img src="images/photo4.jpg" />
+				<img src="images/photo5.jpg" />
+				<img src="images/photo1.jpg" />
+				<img src="images/photo2.jpg" />
+				<img src="images/photo3.jpg" />
+				<img src="images/photo4.jpg" />
+				<img src="images/photo5.jpg" />
+			</div>
+			
+			
+			
+			
+			
+			
+			
+			<footer>
+				<nav>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="facilities.html">facilities</a></li>
+						<li><a href="packages.html">Membership</a></li>
+						<li><a class="selected" href="photo.html">Photos</a></li>
+						<li><a href="about.html">About Us</a></li>
+					</ul>
+				</nav>
+				
+				<address>Copyright  &copy; 2017 - 2019 Karachi Club. All Rights Reserved</address>
+				
+			</footer>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,150 @@
+<!doctype html>
+<html>
+	<head>
+		<title></title>
+		<meta charset="utf-8" />
+		<!--<link rel="stylesheet" href="css/reset.css" />-->
+		<link rel="stylesheet" href="css/style.css" />
+		
+		<script type="text/javascript" src="Jquery.js"></script>
+		<script type="text/javascript">
+		
+		
+			window.onload = function () { 
+				var d = new Date();
+				document.querySelector(".date p span").innerHTML = d.toDateString();
+	
+			}
+
+			
+			
+			
+			/////////////////////////////
+			
+			////////////* Slider *///////
+			$(document).ready(function(){
+				
+				$("#right").click(function(){
+					$("#slider .imageCaption:nth-of-type(1)").hide("Slow");
+					$("#slider .imageCaption:nth-of-type(3)").show("Slow");
+					$("#slider .caption").slideUp("Slow",function(){
+						$("#slider .caption").slideDown("Slow");
+					});
+					
+				})
+				$("#left").click(function(){
+					$("#slider .imageCaption:nth-of-type(3)").hide("Slow");
+					$("#slider .imageCaption:nth-of-type(1)").show("Slow");
+					$("#slider .caption").slideUp("Slow",function(){
+						$("#slider .caption").slideDown("Slow");
+					});
+				})
+			})
+			
+		</script>
+		
+		<style>
+			#membership ul li{
+				color:black;
+			}
+		</style>
+	</head>
+	
+	<body style="font-size:14px;">
+	
+		<a href="loginFolder/index.php"><div id="login">
+			<p>Log In</p>
+		</div></a>
+	
+		
+			
+		<header>
+			<div class="topHeader">
+				<h1>Karachi Club</h1>
+				<div class="ceoMesg">
+						<p><span>CEO <br /> Mr.Daniyal Nawaz</span><br />
+						We welcome the opportunity to connect and share with you our unique approach to innovative management that delivers extraordinary results.
+						</p>
+						<img src="images/ceo1.jpg" alt="CEO" />
+				</div>
+				<div class="date">
+					<p>Today: <span></span></p>
+				</div>	
+			</div>
+			<nav>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="facilities.html">facilities</a></li>
+						<li><a  class="selected"  href="packages.html">Membership</a></li>
+						<li><a href="photo.html">Photos</a></li>
+						<li><a href="about.html">About Us</a></li>
+					</ul>
+			</nav>
+		</header>
+		
+		<div id="container">
+			<div id="membership">
+				<h2>KARACHI CLUB WELCOMES NEW MEMBERS ACROSS ALL CATEGORIES</h2>
+				<p style="color:black">We have various membership packages available to suit all ages and lifestyles with NO joining fee. You don't need to know an existing member to join. We can show you around and even play a few holes to get you familiar with the course and clubhouse.  
+
+				Members enjoy many facilities at Karachi Club including individual and team competitions, thriving social calendar, function room hire, superb catering, professional coaching, golf shop and drinks discount in the bar! We also run a number of popular golf trips each year that are great fun.
+
+				We offer 6 and 7 day memberships as well as discounts for younger members. See below for details and visit our membership rates page for the latest prices and offers.
+
+				For more information on any of our membership packages please contact the club office on 0161 998 4738.
+
+				Alternatively you can use our online contact form or apply online using the form on the Membership Rates page.</p>
+				<h2>Family Membership</h2>
+				<p  style="color:black">Family are always welcome at Karachi Club and with a new club house and brand new ladies locker room  now is the perfect time to join.
+
+If you are under 30 years old further discounts apply!!
+
+Benefits of a Famnily Membership at NGC:
+	<ul>
+	
+<li>      Weekday and Weekend Competitions</li>
+<li>       EWGA Competitions </li>
+<li>         Business Ladies </li>
+<li>         Team Matches </li>
+<li>         Bridge Evenings (Men welcome too) </li>
+<li>         Friday Frolics </li> 
+<li>         Active Social scene </li>
+<li>         And don't forget we have a beautiful golf course playable ALL year round!! </li>
+			</ul>
+			
+			<h2>Term and Condition</h2>
+			<p  style="color:black">
+				<ul>
+					<li>One Month Trial Fee of £110 to be paid in Pro Shop or Club Office</li>
+					<li>Application and Direct Debit Form required to be completed</li>
+					<li>Ability to extend for one month for further £110</li>
+					<li>Play allowed any time weekdays and after 11.00am at weekend</li>
+					<li>On taking out full membership, £110 will be deducted from the first membership subscription invoice</li>
+					<li>No more than 3 trial months allowed in any 24 month period</li>
+					<li>Not available to former Lamberhurst GC members</li>
+				<ul>
+			</p>
+			
+			</div>
+			
+			
+			
+			
+			
+			<footer>
+				<nav>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="facilities.html">facilities</a></li>
+						<li><a href="packages.html">Membership</li>
+						<li><a href="photo.html">Photos</a></li>
+						<li><a href="#">About Us</a></li>
+					</ul>
+				</nav>
+				
+				<address>Copyright  &copy; 2017 - 2019 Karachi Club. All Rights Reserved</address>
+				
+			</footer>
+		</div>
+	</body>
+</html>

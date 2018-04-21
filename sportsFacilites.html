@@ -1,0 +1,200 @@
+<!doctype html>
+<html>
+	<head>
+		<title></title>
+		<meta charset="utf-8" />
+		<!--<link rel="stylesheet" href="css/reset.css" />-->
+		<link rel="stylesheet" href="css/style.css" />
+		
+		<script type="text/javascript" src="Jquery.js"></script>
+		<script type="text/javascript">
+		
+		
+			window.onload = function () { 
+				var d = new Date();
+				document.querySelector(".date p span").innerHTML = d.toDateString();
+	
+			}
+
+			
+			
+			
+			/////////////////////////////
+			
+			////////////* Slider *///////
+			$(document).ready(function(){
+				
+				$("#right").click(function(){
+					$("#slider .imageCaption:nth-of-type(1)").hide("Slow");
+					$("#slider .imageCaption:nth-of-type(3)").show("Slow");
+					$("#slider .caption").slideUp("Slow",function(){
+						$("#slider .caption").slideDown("Slow");
+					});
+					
+				})
+				$("#left").click(function(){
+					$("#slider .imageCaption:nth-of-type(3)").hide("Slow");
+					$("#slider .imageCaption:nth-of-type(1)").show("Slow");
+					$("#slider .caption").slideUp("Slow",function(){
+						$("#slider .caption").slideDown("Slow");
+					});
+				})
+			})
+			
+		</script>
+	</head>
+	
+	<body>
+	
+		<a href="loginFolder/index.php"><div id="login">
+			<p>Log In</p>
+		</div></a>
+	
+		
+			
+		<header>
+			<div class="topHeader">
+				<h1>Karachi Club</h1>
+				<div class="ceoMesg">
+						<p><span>CEO <br /> Mustafa Abbas</span><br />
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+						</p>
+						<img src="images/ceo1.jpg" alt="CEO" />
+				</div>
+				<div class="date">
+					<p>Today: <span></span></p>
+				</div>	
+			</div>
+			<nav>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a class="selected" href="facilities.html">facilities</a></li>
+						<li><a href="packages.html">Memebrship</a></li>
+						<li><a href="photo.html">Photos</a></li>
+						<li><a href="about.html">About Us</a></li>
+					</ul>
+			</nav>
+		</header>
+		
+		<div id="container">
+			<section id="facilites">
+				<div class="swiming">
+					<h2>Sports</h2>
+					<p>
+						
+The Karachi Gymkhana recognized as sports, both at national and international. It has the facilities of variety of indoor and outdoor games, Coaching facilities are available to members and their children. Frequent competition and contests are held under the international referees and empires.
+
+The Karachi Gymkhana has the honor that father of the nation Quaid-e-Azam Mohammad Ali Jinnah has played his favorite game of Billiards. Another honor for Karachi Gymkhana is that the Pakistan Cricket Team defeated the famous M.C.C on the Gymkhana's august pitch and attained for it the coveted international status.
+
+ As the winning shot had gone through, the then venerable Prime Minister of Pakistan Khawja Nazimuddin sprang from his seat involuntarily out of sheer joy. How proud and jubilant the Nation was on that historic day. It is proud for Gymkhana that has produced several world class players in the deferent games. 
+
+					</p>
+					<img src="images/sports.jpg" />
+					<div class="clear"> </div>
+					<table>
+						<tr>
+							<th>
+								Sports Area
+							</th>
+							<th>
+								Quantity
+							</th>
+						</tr>
+						
+						<tr>
+							<td>
+								Cricket Ground
+							</td>
+							<td>
+								Unknown
+							</td>
+						</tr>
+						<tr>
+							<td>
+								Tennis Court
+							</td>
+							<td>
+								Unknown
+							</td>
+						</tr>
+						<tr>
+							<td>
+								Squash Court
+							</td>
+							<td>
+								Unknown
+							</td>
+						</tr>
+						<tr>
+							<td>
+								Indoor Badmintation Court
+							</td>
+							<td>
+								Unknown
+							</td>
+						</tr>
+						<tr>
+							<td>
+								Physical Control Room
+							</td>
+							<td>
+								Unknown	
+							</td>
+						</tr>
+						<tr>
+							<td>
+								Jogging Track
+							</td>
+							<td>
+								Unknown
+							</td>
+						</tr>
+						<tr>
+							<td>
+								Table Tennis Room
+							</td>
+							<td>
+								Unknown;
+							</td>
+						</tr>
+					</table>
+				</div>
+				
+			</section>
+			
+			
+			
+			
+			
+			<section id="grids">
+				<div class="grid1">
+					<h2>Club Events</h2>
+					<p>This section will be updated soon</p>
+				</div>
+				<div class="grid2">
+					<h2>Latest Messege</h2>
+					<p>This section will be updated soon</p>
+				</div>
+				<div class="grid3">
+					<h2>Club New</h2>
+					<p>This section will be updated soon</p>
+				</div>
+			</section>
+			
+			<footer>
+				<nav>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a class="selected" href="#">facilities</a></li>
+						<li><a href="packages.html">Memebrship</a></li>
+						<li><a href="photo.html">Photos</a></li>
+						<li><a href="about.html">About Us</a></li>
+					</ul>
+				</nav>
+				
+				<address>Copyright  &copy; 2017 - 2019 Karachi Club. All Rights Reserved</address>
+				
+			</footer>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,230 @@
+<!doctype html>
+<html>
+	<head>
+		<title></title>
+		<meta charset="utf-8" />
+		<!--<link rel="stylesheet" href="css/reset.css" />-->
+		<link rel="stylesheet" href="css/style.css" />
+		
+		<script type="text/javascript" src="Jquery.js"></script>
+		<script type="text/javascript">
+		
+		
+			window.onload = function () { 
+				var d = new Date();
+				document.querySelector(".date p span").innerHTML = d.toDateString();
+	
+			}
+
+			
+			
+			
+			/////////////////////////////
+			
+			////////////* Slider *///////
+			$(document).ready(function(){
+				
+				$("#right").click(function(){
+					$("#slider .imageCaption:nth-of-type(1)").hide("Slow");
+					$("#slider .imageCaption:nth-of-type(3)").show("Slow");
+					$("#slider .caption").slideUp("Slow",function(){
+						$("#slider .caption").slideDown("Slow");
+					});
+					
+				})
+				$("#left").click(function(){
+					$("#slider .imageCaption:nth-of-type(3)").hide("Slow");
+					$("#slider .imageCaption:nth-of-type(1)").show("Slow");
+					$("#slider .caption").slideUp("Slow",function(){
+						$("#slider .caption").slideDown("Slow");
+					});
+				})
+			})
+			
+		</script>
+		
+		<style>
+		#courtsContainer div{
+			width:200px;
+			height:150px;
+			background:#a4a4a4;
+			float:left;
+			text-align:center;
+			margin-right:20px;
+			border-radius:20px;
+			cursor:pointer;
+			margin-top:20px;
+			margin-bottom:20px;
+
+		}
+#courtsContainer{
+	width:880px;
+	margin:0 auto;
+}		
+#courtsContainer div h3{
+	background:rgba(0, 94, 155, 0.8);
+	border-radius:20px 20px 0 0;
+	padding:5px;
+	color:white;
+	font-size:12px;
+	text-transform:uppercase;
+	-webkit-transition-property: padding; /* Safari */
+    -webkit-transition-duration: .5s; /* Safari */
+    transition-property: padding;
+    transition-duration: .5s;
+}
+#courtsContainer div:hover h3{
+	padding:5px;
+	border-radius:20px 20px 0 0;
+}
+
+#courtsContainer div#tennis{
+	background:url(./images/sports.jpg);
+	background-size:200px 150px;
+}	
+#courtsContainer div#golf{
+	background:url(./images/library.jpg);
+	background-size:200px 150px;
+}	
+#courtsContainer div#pool{
+	background:url(./images/cafe.jpg);
+	background-size:200px 150px;
+}	
+#courtsContainer div#lunchmenu{
+	background:url(./images/lunchmenu.jpg);
+	background-size:200px 150px;
+}	
+#courtsContainer div#prayerroom{
+	background:url(./images/prayerroom.jpg);
+	background-size:200px 150px;
+}	
+#courtsContainer div#firstaid{
+	background:url(./images/firstaid.png);
+	background-size:200px 150px;
+}
+#courtsContainer div#beutysaloon{
+	background:url(./images/beutysaloon.jpg);
+	background-size:200px 150px;
+}
+#courtsContainer div#parking{
+	background:url(./images/parking.jpg);
+	background-size:200px 150px;
+}
+		</style>
+	</head>
+	
+	<body style="font-size:14px;">
+	
+		<a href="loginFolder/index.php"><div id="login">
+			<p>Log In</p>
+		</div></a>
+	
+		
+			
+		<header>
+			<div class="topHeader">
+				<h1>Karachi Club</h1>
+				<div class="ceoMesg">
+						<p><span>CEO <br /> Mr.Daniyal Nawaz</span><br />
+						We welcome the opportunity to connect and share with you our unique approach to innovative management that delivers extraordinary results.
+						</p>
+						<img src="images/ceo1.jpg" alt="CEO" />
+				</div>
+				<div class="date">
+					<p>Today: <span></span></p>
+				</div>	
+			</div>
+			<nav>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a  class="selected"  href="facilities.html">facilities</a></li>
+						<li><a href="packages.html">Membership</a></li>
+						<li><a href="photo.html">Photos</a></li>
+						<li><a href="about.html">About Us</a></li>
+					</ul>
+			</nav>
+		</header>
+		
+		<div id="container">
+			
+			<section id="courtsContainer">
+			<a href="sportsFacilites.html">
+				<div id="tennis">
+					<h3>Sporting
+					</h3>
+				</div>
+			</a>
+			<a href="libraryFacilities.html">
+			<div id="golf">
+				<h3>Library
+				</h3>
+				
+			</div>
+			</a>
+			
+			<a href="cafeFacilities.html">
+			<div id="pool">
+				<h3>Resturant & Cafe
+				</h3>
+				
+			</div>
+			</a>
+			
+			<a href="#">
+			<div id="lunchmenu">
+				<h3>Daily Lunch Menu
+				</h3>
+			</div>
+			</a>
+			
+			<a href="#">
+			<div id="prayerroom">
+				<h3>Prayer Room
+				</h3>
+			</div>
+			</a>
+		
+			<a href="firstaidFacilities.html">
+			<div id="firstaid">
+				<h3>First Aid Facility
+				</h3>
+			</div>
+			</a>
+			
+			<a href="#">
+			<div id="beutysaloon">
+				<h3>Beauty Saloon
+				</h3>
+			</div>
+			</a>
+			
+			<a href="#">
+			<div id="parking">
+				<h3>Parking facility
+				</h3>
+			</div>
+			</a>
+			
+		</section>
+			
+			
+			
+			
+			
+			<footer>
+				<nav>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a  class="selected" href="facilities.html">facilities</a></li>
+						<li><a href="packages.html">Membership</a></li>
+						<li><a href="photo.html">Photos</a></li>
+						<li><a href="about.html">About Us</a></li>
+					</ul>
+				</nav>
+				
+				<address>Copyright  &copy; 2017 - 2019 Karachi Club. All Rights Reserved</address>
+				
+			</footer>
+		</div>
+	</body>
+</html>

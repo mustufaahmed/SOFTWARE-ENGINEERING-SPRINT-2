@@ -1,0 +1,173 @@
+<!doctype html>
+<html>
+	<head>
+		<title></title>
+		<meta charset="utf-8" />
+		<!--<link rel="stylesheet" href="css/reset.css" />-->
+		<link rel="stylesheet" href="css/style.css" />
+		
+		<script type="text/javascript" src="Jquery.js"></script>
+		<script type="text/javascript">
+		
+		
+			window.onload = function () { 
+				var d = new Date();
+				document.querySelector(".date p span").innerHTML = d.toDateString();
+	
+			}
+
+			
+			
+			
+			/////////////////////////////
+			
+			////////////* Slider *///////
+			$(document).ready(function(){
+				
+				$("#right").click(function(){
+					
+					$("#slider .imageCaption:nth-of-type(1)").hide("Slow");
+					$("#slider .imageCaption:nth-of-type(3)").show("Slow");
+					$("#slider .caption").slideUp("Slow",function(){
+						$("#slider .caption").slideDown("Slow");
+					});
+					
+				})
+				$("#left").click(function(){
+					$("#slider .imageCaption:nth-of-type(3)").hide("Slow");
+					$("#slider .imageCaption:nth-of-type(1)").show("Slow");
+					$("#slider .caption").slideUp("Slow",function(){
+						$("#slider .caption").slideDown("Slow");
+					});
+				})
+			})
+			
+		</script>
+	</head>
+	
+	<body>
+	
+		<a href="loginFolder/index.php"><div id="login">
+			<p>Log In</p>
+		</div></a>
+	
+		
+			
+		<header>
+			<div class="topHeader">
+				<h1>Karachi Club</h1>
+				<div class="ceoMesg">
+						<p><span>CEO <br /> Mr.Daniyal Nawaz</span><br />
+						We welcome the opportunity to connect and share with you our unique approach to innovative management that delivers extraordinary results.
+						</p>
+						<img src="images/ceo1.jpg" alt="CEO" />
+				</div>
+				<div class="date">
+					<p>Today: <span></span></p>
+				</div>	
+			</div>
+			<nav>
+					<ul>
+						<li><a class="selected" href="index.html">Home</a></li>
+						<li><a href="facilities.html">facilities</a></li>
+						<li><a href="packages.html">Membership</a></li>
+						<li><a href="photo.html">Photos</a></li>
+						<li><a href="about.html">About Us</a></li>
+					</ul>
+			</nav>
+		</header>
+		
+		<div id="container">
+			<section id="slider">
+			
+				<div class="imageCaption">
+					<div class="caption">	
+						<a href="about.html">	
+							<h3>Karachi Club</h3>
+							<p> 
+								Karachi Gymkhana specifically rated as one of the largest club in Asia in view of its membership and sports facilities. The multiple facilities like Tennis, Badminton, Squash, Cricket and other sports, Swimming pool, Sauna bath, T.V Room, Jogging Track, Car Parking, Catering, Library,
+							</p>
+						</a>
+						</div>
+					<img src="images/karachiclub.jpg" alt="sports" />
+				</div>
+				
+				<a href="#">
+					<div class="imageCaption">
+						<div class="caption">	
+						<a href="#">	
+							<h3>SPORTS</h3>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+							</p>
+						</a>
+						</div>
+						<img src="images/sports.jpg" alt="sports" />
+					</div>
+				</a>
+				<div class="imageCaption">
+					<div class="caption">	
+						<a href="swimingFacilites.html">	
+							<h3>Swiming Pool</h3>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+							</p>
+						</a>
+					</div>
+					<img src="images/Pool.jpg" alt="Swimming Pool" />
+				</div>
+				
+				
+				
+				<div id="left"></div>
+				<div id="right"></div>
+				
+				
+				
+				
+				
+			</section>
+			
+			<section id="grids">
+				<div class="grid1">
+					<h2>Club Events</h2>
+					<p>This section will be updated soon</p>
+				</div>
+				<div class="grid2">
+					<h2>Latest Messege</h2>
+					<p>This section will be updated soon</p>
+				</div>
+				<div class="grid3">
+					<h2>Club New</h2>
+					<p>This section will be updated soon</p>
+				</div>
+			</section>
+			
+			
+			
+			<section id="facilities">
+					<h2>facilities</h2>
+					<a href="swimingFacilites.html"><img src="" alt="" /></a>
+					<a href="sportsFacilites.html"><img src="" alt="" /></a>
+					<a href="libraryFacilities.html"><img src="" alt="" /></a>
+			</section>
+			
+			
+			
+			<footer>
+				<nav>
+					<ul>
+						<li><a class="selected" href="#">Home</a></li>
+						<li><a href="facilities.html">facilities</a></li>
+						<li><a href="packages.html">Membership</a></li>
+						<li><a href="photo.html">Photos</a></li>
+						<li><a href="about.html">About Us</a></li>
+					</ul>
+				</nav>
+				
+				<address>Copyright  &copy; 2017 - 2019 Karachi Club. All Rights Reserved</address>
+				
+			</footer>
+		</div>
+	</body>
+</html>

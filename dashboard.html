@@ -1,0 +1,139 @@
+<!doctype html>
+<html>
+	<head>
+		<title></title>
+		<meta charset="utf-8" />
+		<!--<link rel="stylesheet" href="css/reset.css" />-->
+		<link rel="stylesheet" href="css/style.css" />
+		
+		<script type="text/javascript" src="Jquery.js"></script>		
+		<script>
+			$(document).ready(function(){
+				$(".userSetting").click(function(){
+					$("#courtsContainer").hide("fast");
+					$("#s").show("fast");
+					$("nav ul li a").removeClass();
+				})
+			})
+		</script>
+	</head>
+	
+	<body>
+	
+		
+		
+		<header>
+			
+				<div class="topHeaderBoard">
+				
+					<input id="search" type="text" placeholder="Search"/>
+					<a href="index.html"><h1>Karachi <span>Club</span></h1></a>
+					<em>Log Out</em>
+			
+				</div>
+				<div class="basicInfo">
+				<div class="forMiddle">
+					
+					<div class="bio">
+						<h3>Mustafa Abbas</h3><br />
+						<em>Karachi, Sindh, Pakistan</em>
+					</div>
+					<div class="setPanel">
+						<div class="userSetting">Setting</div>
+						<div class="userHistory">History</div>
+					</div>
+				</div>
+				</div>
+			
+			<nav>
+					<ul>
+						<li><a class="selected" href="dashboard.html">Courts</a></li>
+						<li><a href="#">News</a></li>
+						<li><a href="#">Events</a></li>
+						<li><a href="#">Photos</a></li>
+						<li><a href="#">About Us</a></li>
+					</ul>
+			</nav>
+		</header>
+		
+		<section id="courtsContainer">
+			<a href="tennis.html">
+				<div id="tennis">
+					<h3>Tennis
+						<em>View Court Schedual</em>
+					</h3>
+				</div>
+			</a>
+			<div id="golf">
+				<h3>Golf
+					<em>View Court Schedual</em>
+				</h3>
+				
+			</div>
+		
+			<div id="pool">
+				<h3>Swiming Pool
+					<em>View Court Schedual</em>
+				</h3>
+				
+			</div>
+			
+			<div id="#">
+				<h3>Coming Soon
+					<em>View Court Schedual</em>
+				</h3>
+			</div>
+			
+			<div id="#">
+				<h3>Coming Soon
+					<em>View Court Schedual</em>
+				</h3>
+			</div>
+		
+			<div id="#">
+				<h3>Coming Soon
+					<em>View Court Schedual</em>
+				</h3>
+			</div>
+			
+		</section>
+		
+		<section id="s" style="display:none;">
+			<h2>Setting</h2>
+			<form>
+					<table>
+						<tr>
+							<td><label for="rUserName">Change User Name</label></td>
+							<td><input id="rUserName" type="text" /></td>
+							<td><input type="button" value="Change" /></td>
+						</tr>
+				</form>
+				<form>
+						<tr>
+							<td><label for="rPass">Change Password</label></td>
+							<td><input id="rPass" type="text" /></td>
+							<td><input type="button"  value="Change" /></td>
+						</tr>
+				</form>
+				<form>
+						<tr>
+							<td><label for="rContact">Change Contact Number</label></td>
+							<td><input id="rContact" type="text" /></td>
+							<td><input type="submit"  value="submit" /></td>
+						</tr>
+				</form>
+				<form>
+						<tr>
+							<td><label for="rEmail">Change Email</label></td>
+							<td><input id="rEmail" type="text" /></td>
+							<td><input type="button"  value="Change" /></td>
+						</tr>
+				</form>
+				</table>
+				
+		</section>
+		
+			
+		
+	</body>
+</html>
